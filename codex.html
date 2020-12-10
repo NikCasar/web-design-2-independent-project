@@ -9,9 +9,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@600&family=Literata&display=swap" rel="stylesheet">
   </head>
   <body>
-    <header>
-      <nav>
-        <img class="logo" src="WWW/images/goat-logo.png" alt="">
+    <ul class="skip-links">
+      <li><a href="#main">Jump to main content</a></li>
+      <li><a href="#nav">Jump to navigation</a></li>
+    </ul>
+    <header role="banner">
+      <nav role="navigation" id="nav" tabindex="0">
+        <img class="logo" src="images/goat-logo.png" alt="">
         <h1>Ghostvenge</h1>
         <ul>
           <li>
@@ -26,11 +30,9 @@
         </ul>
       </nav>
     </header>
-    <main>
+    <main role="main" id="main" tabindex="0">
       <h2>Ye old Codex</h2>
         <p>Within this acuratly digital made codex, you'll find all the names of every kind of enity that has been discoverd.</p>
-        <a href="#" class="round-btn">&#8249;</a>
-        <a href="#" class="round-btn">&#8250;</a>
          <div class="card">
            <img src="" alt="">
            <div class="card-body">
@@ -79,10 +81,7 @@
               <a href="#" class="btn">Removal options</a>
             </div>
          </div>
-         <a href="#" class="round-btn">&#8249;</a>
-         <a href="#" class="round-btn">&#8250;</a>
-    </main>
-    <footer>
+    <footer role="contentinfo">
       <p>Ghostvenge © 2020</p>
       <div class="company-info">
         <p>(613)-666-6667 / <a href="#">ghostvenge@email.com</a></p>

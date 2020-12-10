@@ -9,8 +9,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@600&family=Literata&display=swap" rel="stylesheet">
   </head>
   <body>
-    <header>
-      <nav>
+    <ul class="skip-links">
+      <li><a href="#main">Jump to main content</a></li>
+      <li><a href="#nav">Jump to navigation</a></li>
+    </ul>
+    <header role="banner">
+      <nav role="navigation" id="nav" tabindex="0">
         <img class="logo" src="WWW/images/goat-logo.png" alt="">
         <h1>Ghostvenge</h1>
         <ul>
@@ -26,7 +30,7 @@
         </ul>
       </nav>
     </header>
-    <main>
+    <main role="main" id="main" tabindex="0">
       <h2>The Solutions</h2>
       <p>Now that you've used the Codex to identifiy the kind of eneity your dealing with, you can find the best way to rid of it. From the codex which has givien some advice, this will be more indepth and helpful.</p>
       <div class="columns">
@@ -91,7 +95,7 @@
         <p>All in all, give us a call if you have a problem you need solved. Worse comes to worse if you "actually" have Satan as your house guest..... we sugest that you move and just restart. Just burn it down and restart from the rubble.</p>
       </div>
     </main>
-    <footer>
+    <footer role="contentinfo">
       <p>Ghostvenge © 2020</p>
       <div class="company-info">
         <p>(613)-666-6667 / <a href="#">ghostvenge@email.com</a></p>

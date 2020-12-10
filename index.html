@@ -9,8 +9,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@600&family=Literata&display=swap" rel="stylesheet">
   </head>
   <body>
-    <header>
-      <nav>
+    <ul class="skip-links">
+      <li><a href="#main">Jump to main content</a></li>
+      <li><a href="#nav">Jump to navigation</a></li>
+    </ul>
+    <header role="banner">
+      <nav role="navigation" id="nav" tabindex="0">
         <img class="logo" src="WWW/images/goat-logo.png" alt="">
         <h1>Ghostvenge</h1>
         <ul>
@@ -26,7 +30,7 @@
         </ul>
       </nav>
     </header>
-    <main>
+    <main role="main" id="main" tabindex="0">
       <h2>Welcome one and all to Ghostvenge</h2>
       <h4>Find all your ghost extermintion experties here</h4>
       <p>Move into that old house at the end of the street? ever feel like somebody is watch your from the shadows? Gram-Gram gone to the after life but still consintly bothering you on why you became a ghost hunter instead of a doctor just like your father or maybe, recentaly you've notice your presious stash of candy that you obvisly never told margett about has mystiriously disapered.</p><small>....(MARGETT WHAT THE HECK)</small>
@@ -45,7 +49,7 @@
         <p>Ghostvenge is made up of knowlegde from over the past 100 thousand years, all convenitly placed in this compeletly normal website. Use all this knowlegde to get rid of those pesky "unwanted" friends, with little to no repercautions. Now what are you waiting for... dont just stand there, dive right in.</p>
       </div>
       <div class="">
-        <form action="">
+        <form role="search" action="">
           <fieldset>
             <legend>Contact</legend>
             <label for="fname">First Name:</label><br>
@@ -62,7 +66,7 @@
       </form>
       </div>
     </main>
-    <footer>
+    <footer role="contentinfo">
       <p>Ghostvenge © 2020</p>
       <div class="company-info">
         <p>(613)-666-6667 / <a href="#">ghostvenge@email.com</a></p>
