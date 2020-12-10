@@ -92,9 +92,21 @@ small {
 footer {
   background-color: #222222;
   color: #FFF8F0;
-  padding-top: 1.5em;
-  padding-bottom: 1.5em;
   text-align: center;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer a {
+  color: white;
+  font-size: 10px;
+}
+
+.company-info {
+  display: inline;
+  font-size: 10px;
 }
 
 main {
