@@ -24,21 +24,22 @@ body {
 
 nav {
   overflow: hidden;
+  text-align: center;
+}
+
+nav li {
+  display: inline-block;
 }
 
 nav a {
-  float: left;
-  color: #767b91;
+  color: #fff;
   text-align: center;
   padding: .75rem;
   text-decoration: none;
   font-size: 1.125rem;
   line-height: 1.5rem;
   border-radius: .25rem;
-}
-
-.nav-right {
-  float: right;
+  display: inline-flex;
 }
 
 nav ul {
@@ -48,18 +49,25 @@ nav ul {
   overflow: hidden;
   padding: 0;
   margin: 0;
+
 }
 
 nav a:hover {
   background-color: #c6c8d2;
-  color: #fff8f0;
+  color: #fff;
 }
 
 .logo {
-  width: 50%;
-  padding: .5rem;
+  width: 20%;
+  margin: 7.5rem;
+  margin-bottom: 0;
+  margin-top: 0;
   text-align: center;
   display: flex;
+}
+
+header {
+  background-color:  #ee6352;
 }
 
 h1 {
@@ -78,16 +86,28 @@ h2 {
   text-align: center;
   margin: 0;
   margin-top: 2em;
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1rem;
+}
+
+.coupon h2 {
+  color: #fff;
 }
 
 p {
   margin: 0;
   margin-bottom: 2em;
+  margin-left: 1em;
+  margin-right: 1em;
+  text-align: center;
 }
 
 small {
-  font-size: .5rem;
-  color: #767b91;
+  font-size: .75rem;
+  color: #c1292e;
 }
 
 footer {
@@ -103,6 +123,10 @@ footer p {
 footer a {
   color: white;
   font-size: .6rem;
+}
+
+footer small {
+  color: #fff;
 }
 
 .company-info {
@@ -121,30 +145,43 @@ form {
   border-color: #ee6352;
 }
 
-.card {
+.column{
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .2);
-  max-width: 300px;
   text-align: center;
-  margin-bottom: 2em;
-  padding: .5em;
+  width: 100%;
+  display: block;
+  margin-bottom: 1.25em;
 }
 
 .title {
   color: grey;
-  font-size: 1.125rem;
+  font-size: 1rem;
 }
 
 .btn {
-  border: none;
-  outline: 0;
   display: inline-block;
   padding: .5rem;
   color: white;
   background: #000;
   text-align: center;
-  cursor: pointer;
   width: 100%;
-  font-size: 1.125rem;
+  font-size: 1rem;
+}
+
+.ghost-info {
+  margin-bottom: 1rem;
+  display: flex;
+  text-align: left;
+
+}
+
+.card p {
+  background-color: #c6c8d2;
+  padding: 1rem;
+}
+
+.card ul {
+  padding: .5em;
 }
 
 a {
@@ -159,18 +196,23 @@ a:hover {
 }
 
 .coupon {
-  border: 5px dotted #ee6352;
+  border: 5px #ee6352 solid;
   width: 80%;
   border-radius: 15px;
   margin: 0 auto;
   max-width: 600px;
   padding: 2px 16px;
-  background-color: #c6c8d2;
+  background-color: gray;
   text-align: center;
 }
 
+.coupon p {
+  padding-top: 1rem;
+  color: white;
+}
+
 .promo {
-  background: #767b91;
+  background: #fff8f0;
   border-radius: 15px;
   padding: .5rem;
 }
@@ -199,6 +241,7 @@ a:hover {
   padding-left: 2em;
   padding-right: 2em;
   width: 100%;
+  display: inline-block;
 }
 
 .skip-links a {
@@ -233,6 +276,27 @@ a:hover {
     margin: 0 0 1.4rem;
   }
 
+  .column {
+    float: left;
+    width: 25%;
+    padding: .5em;
+    display: inline-block;
+    margin-left: 2em;
+    margin-right: 2em;
+    align-content: center;
+  }
+
+  .row {
+    padding-left: 5em;
+    padding-right: 5em;
+  }
+
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
 }
 
 @media only screen and (min-width: 90em) {
@@ -250,8 +314,25 @@ a:hover {
     text-align: center;
   }
 
-  .nav-right {
-    float: none;
+  .column {
+    float: left;
+    width: 25%;
+    padding: 0 .625em;
+    display: inline-block;
+    margin-left: 2em;
+    margin-right: 2em;
+    align-content: center;
+  }
+
+  .row {
+    padding-left: 5em;
+    padding-right: 5em;
+  }
+
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
   }
 
 }
