@@ -66,6 +66,10 @@ nav a:hover {
   display: flex;
 }
 
+img {
+  max-width: 100%;
+}
+
 header {
   background-color:  #ee6352;
 }
@@ -208,7 +212,7 @@ a:hover {
 
 .coupon p {
   padding-top: 1rem;
-  color: white;
+  color:  black;
 }
 
 .promo {
